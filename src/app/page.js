@@ -1,9 +1,9 @@
 "use client";
-import { Card } from "@/components/Card";
+// import { Card } from "@/components/Card";
 import Footer from "@/components/Footer";
 import { ModeButton } from "@/components/ModeButton";
 import NameSection from "@/components/NameSection";
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 import ProjectCollection from "@/components/ProjectCollection";
 import { BackgroundLines } from "@/components/ui/background-lines";
 
