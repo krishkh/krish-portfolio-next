@@ -10,8 +10,9 @@ export const ModeButton = () => {
 
   useEffect(() => {
     document?.body.classList.toggle("dark", mode === "dark");
-    if (document)
-      {document?.cookie = `mode=${mode}`;}
+    if (document) {
+      document.cookie = `mode=${mode}`;
+    }
   }, [mode]);
 
   return (
