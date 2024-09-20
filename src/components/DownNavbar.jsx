@@ -56,7 +56,7 @@ export default function DownNavbar() {
     },
   ];
   return (
-    <diiv className="self-center w-full fixed bottom-10 z-50">
+    <div className="self-center w-full fixed bottom-10 z-50">
       <div className="flex z-50 items-center justify-center w-full ">
         <FloatingDock
           // only for demo, remove for production
@@ -64,6 +64,6 @@ export default function DownNavbar() {
           items={links}
         />
       </div>
-    </diiv>
+    </div>
   );
 }
