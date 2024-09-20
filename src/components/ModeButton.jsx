@@ -5,12 +5,13 @@ import { faMoon } from "@fortawesome/free-solid-svg-icons";
 
 export const ModeButton = () => {
   const [mode, setMode] = useState(
-    document.cookie.includes("mode=dark") ? "dark" : "light"
+    document?.cookie.includes("mode=dark") ? "dark" : "light"
   );
 
   useEffect(() => {
     document?.body.classList.toggle("dark", mode === "dark");
-    document?.cookie = `mode=${mode}`;
+    if (document)
+      {document?.cookie = `mode=${mode}`;}
   }, [mode]);
 
   return (
