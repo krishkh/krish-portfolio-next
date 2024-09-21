@@ -2,6 +2,7 @@
 import React from "react";
 import { BackgroundGradient } from "./ui/background-gradient";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Card({ project }) {
   return (
@@ -21,12 +22,15 @@ export function Card({ project }) {
         <p className="text-sm text-neutral-600 dark:text-neutral-400">
           {project.description}
         </p>
-        <button className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
+        <Link
+          to={project.link}
+          className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800"
+        >
           <span>Prototype here.. </span>
           <span className="bg-zinc-700 rounded-full text-[0.6rem] px-2 py-0 text-white">
             {project.price}
           </span>
-        </button>
+        </Link>
       </BackgroundGradient>
     </div>
   );
