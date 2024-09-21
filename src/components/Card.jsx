@@ -23,7 +23,7 @@ export function Card({ project }) {
           {project.description}
         </p>
         <Link
-          to={project.link}
+          href={project.link}
           className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800"
         >
           <span>Prototype here.. </span>
