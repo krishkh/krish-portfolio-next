@@ -11,7 +11,7 @@ const ProjectCollection = ({}) => {
     },
     {
       name: "kaizenCart",
-      image: "/kaizenCart.jpg",
+      image: "/kaizenTechSociety.png",
       link: "https://www.kaizentechsociety.xyz/",
       description:
         "A tech community website for sharing knowledge and resources.",
