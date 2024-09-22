@@ -2,6 +2,7 @@
 // import { Card } from "@/components/Card";
 import Footer from "@/components/Footer";
 import { ModeButton } from "@/components/ModeButton";
+import ModelCanvas from "@/components/ModelCanvas";
 import NameSection from "@/components/NameSection";
 // import Navbar from "@/components/Navbar";
 import ProjectCollection from "@/components/ProjectCollection";
@@ -17,7 +18,10 @@ export default function Home() {
         <NameSection />
         <ProjectCollection />
         <SkillSection />
-
+        <div>
+          <h1>3D Model Viewer</h1>
+          <ModelCanvas url="/human_brain.glb" />
+        </div>
         {/* <DownNavbar /> */}
         <Footer />
       </div>
