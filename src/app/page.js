@@ -5,6 +5,7 @@ import { ModeButton } from "@/components/ModeButton";
 import NameSection from "@/components/NameSection";
 // import Navbar from "@/components/Navbar";
 import ProjectCollection from "@/components/ProjectCollection";
+import SkillSection from "@/components/SkillSection";
 import { BackgroundLines } from "@/components/ui/background-lines";
 
 export default function Home() {
@@ -15,9 +16,10 @@ export default function Home() {
         {/* <Navbar /> */}
         <NameSection />
         <ProjectCollection />
-        <Footer />
+        <SkillSection />
 
         {/* <DownNavbar /> */}
+        <Footer />
       </div>
     </BackgroundLines>
   );

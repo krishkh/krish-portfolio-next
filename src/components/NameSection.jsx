@@ -1,3 +1,5 @@
+import ImageTooltip from "./ImageTooltip";
+
 const NameSection = () => {
   return (
     <div className="z-40 mt-[2rem] sm:mt-[2rem]  md:mt-[4rem]">
@@ -6,11 +8,13 @@ const NameSection = () => {
           HI I AM KRISH
         </div>
         <div className="flex justify-center p-4 items-center text-white text-7xl font-lato font-thin">
-          <img
-            src="/krish.jpg"
-            alt="krish"
-            className="w-40 md:w-[25rem] rounded-full  aspect-[1] object-cover"
-          />
+          <ImageTooltip content="Handomse man">
+            <img
+              src="/krish.jpg"
+              alt="krish"
+              className="w-40 md:w-[25rem] rounded-full  aspect-[1] object-cover"
+            />
+          </ImageTooltip>
         </div>
       </div>
       <div className="bg-black dark:bg-white my-12 p-[0.1px]"></div>
