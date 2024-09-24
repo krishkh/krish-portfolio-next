@@ -2,7 +2,10 @@ import React from "react";
 
 export const Testimonial = ({ content, sayerName, position, imgSrc }) => {
   return (
-    <figure className="max-w-screen-md mx-auto text-center mt-12">
+    <figure
+      id="Testimonial"
+      className="max-w-screen-md mx-auto text-center mt-12"
+    >
       <svg
         className="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600"
         aria-hidden="true"

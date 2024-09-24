@@ -25,7 +25,7 @@ const ProjectCollection = ({}) => {
     },
   ];
   return (
-    <div className="flex flex-col md:flex-row gap-4">
+    <div id="#Projects" className="flex flex-col md:flex-row gap-4">
       {projectsData.map((project, index) => (
         <Card key={index} project={project} />
       ))}

@@ -1,8 +1,8 @@
 "use client";
 // import { Card } from "@/components/Card";
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 import { ModeButton } from "@/components/ModeButton";
-import ModelCanvas from "@/components/ModelCanvas";
+// import ModelCanvas from "@/components/ModelCanvas";
 import NameSection from "@/components/NameSection";
 // import Navbar from "@/components/Navbar";
 import ProjectCollection from "@/components/ProjectCollection";
@@ -25,7 +25,7 @@ export default function Home() {
         </div> */}
         {/* <DownNavbar /> */}
         <Testimonial content="Used shadcn, acertinity, flowbite, and more " />
-        <Footer />
+        <div className="p-24"></div>
       </div>
     </BackgroundLines>
   );
