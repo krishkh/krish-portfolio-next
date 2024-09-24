@@ -6,8 +6,9 @@ import Link from "next/link";
 
 export function Card({ project }) {
   return (
-    <div>
-      <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
+    <div className="mt-20 mx-6">
+      {/* <div className=""> */}
+      <BackgroundGradient className="rounded-[22px]  p-4 sm:p-10 bg-white dark:bg-zinc-900">
         <Image
           src={project.image}
           alt={project.name}

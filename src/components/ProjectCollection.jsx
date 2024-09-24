@@ -10,7 +10,7 @@ const ProjectCollection = ({}) => {
         "An e-commerce platform for seamless online shopping experiences.",
     },
     {
-      name: "kaizenCart",
+      name: "kaizen Tech Society",
       image: "/KaizenTechSociety.png",
       link: "https://www.kaizentechsociety.xyz/",
       description:
@@ -25,7 +25,7 @@ const ProjectCollection = ({}) => {
     },
   ];
   return (
-    <div className="flex gap-4">
+    <div className="flex flex-col md:flex-row gap-4">
       {projectsData.map((project, index) => (
         <Card key={index} project={project} />
       ))}

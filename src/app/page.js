@@ -7,6 +7,7 @@ import NameSection from "@/components/NameSection";
 // import Navbar from "@/components/Navbar";
 import ProjectCollection from "@/components/ProjectCollection";
 import SkillSection from "@/components/SkillSection";
+import { Testimonial } from "@/components/testimonial";
 import { BackgroundLines } from "@/components/ui/background-lines";
 
 export default function Home() {
@@ -18,11 +19,12 @@ export default function Home() {
         <NameSection />
         <ProjectCollection />
         <SkillSection />
-        <div>
+        {/* <div>
           <h1>3D Model Viewer</h1>
           <ModelCanvas url="/human_brain.glb" />
-        </div>
+        </div> */}
         {/* <DownNavbar /> */}
+        <Testimonial content="Used shadcn, acertinity, flowbite, and more " />
         <Footer />
       </div>
     </BackgroundLines>
