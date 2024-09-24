@@ -28,12 +28,14 @@ export const FloatingDock = ({ items, desktopClassName, mobileClassName }) => {
 const FloatingDockMobile = ({ items, className }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={cn("relative block md:hidden", className)}>
+    <div
+      className={cn("relative block md:hidden bottom-10 right-10  ", className)}
+    >
       <AnimatePresence>
         {open && (
           <motion.div
             layoutId="nav"
-            className="absolute bottom-full mb-2 inset-x-0 flex flex-col gap-2"
+            className="absolute right-10 bottom-10 mb-2 inset-x-0 flex flex-col gap-2"
           >
             {items.map((item, idx) => (
               <motion.div

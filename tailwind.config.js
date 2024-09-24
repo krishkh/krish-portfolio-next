@@ -21,6 +21,15 @@ module.exports = {
       },
     },
     extend: {
+      animation: {
+        "gradient-move": "gradientMove 3s ease infinite",
+      },
+      keyframes: {
+        gradientMove: {
+          "0%": { backgroundPosition: "0% 50%" },
+          "100%": { backgroundPosition: "100% 50%" },
+        },
+      },
       colors: {
         border: "hsl(var(--border))",
         black: "#1d1d1d",

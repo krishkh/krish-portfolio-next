@@ -17,7 +17,8 @@ const NameSection = () => {
           </ImageTooltip>
         </div>
       </div>
-      <div className="bg-black dark:bg-white my-12 p-[0.1px]"></div>
+      <div className="my-12 h-[2px] bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 animate-gradient-move bg-[length:200%_200%]"></div>
+      {/* <div className="bg-black dark:bg-white my-12 p-[0.1px]"></div> */}
     </div>
   );
 };

@@ -14,7 +14,9 @@ export default function DownNavbar() {
   const links = [
     {
       title: "Home",
-      icon: <IconHome className=" text-neutral-500 dark:text-neutral-300" />,
+      icon: (
+        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
       href: "#",
     },
 
@@ -57,7 +59,7 @@ export default function DownNavbar() {
   ];
   return (
     <div className="self-center w-full fixed bottom-10 z-50">
-      <div className="flex z-50 items-center justify-center w-full ">
+      <div className="flex z-50 items-center justify-end md:justify-center w-full ">
         <FloatingDock
           // only for demo, remove for production
           mobileClassName="translate-y-20"
