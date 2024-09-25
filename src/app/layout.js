@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import DownNavbar from "@/components/DownNavbar";
 import Footer from "@/components/Footer";
-import Pacman from "@/components/pacman";
+import { Pacman, PacmanY } from "@/components/pacman";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -26,7 +26,11 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} m-4 overflow-x-hidden antialiased`}
       >
         <Pacman />
-        {children}
+        <div className="flex">
+          <PacmanY />
+          {children}
+          <PacmanY />
+        </div>
         <DownNavbar />
         {/* <Footer /> */}
       </body>
