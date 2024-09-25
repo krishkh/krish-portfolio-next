@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           <PacmanY />
         </div>
         <DownNavbar />
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
