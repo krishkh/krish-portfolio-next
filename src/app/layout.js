@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import DownNavbar from "@/components/DownNavbar";
 import Footer from "@/components/Footer";
+import Pacman from "@/components/pacman";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} m-4 overflow-x-hidden antialiased`}
       >
+        <Pacman />
         {children}
         <DownNavbar />
         {/* <Footer /> */}

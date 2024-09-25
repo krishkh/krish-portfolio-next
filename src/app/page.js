@@ -4,6 +4,7 @@
 import { ModeButton } from "@/components/ModeButton";
 // import ModelCanvas from "@/components/ModelCanvas";
 import NameSection from "@/components/NameSection";
+import Pacman from "@/components/pacman";
 // import Navbar from "@/components/Navbar";
 import ProjectCollection from "@/components/ProjectCollection";
 import SkillSection from "@/components/SkillSection";
@@ -25,6 +26,7 @@ export default function Home() {
         </div> */}
         {/* <DownNavbar /> */}
         <Testimonial content="Used shadcn, acertinity, flowbite, and more " />
+        <Pacman />
         <div className="p-24"></div>
       </div>
     </BackgroundLines>
