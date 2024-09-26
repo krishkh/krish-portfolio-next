@@ -25,7 +25,7 @@ export default function Home() {
           <ModelCanvas url="/human_brain.glb" />
         </div> */}
         {/* <DownNavbar /> */}
-        <Testimonial content="Used shadcn, acertinity, flowbite, and more " />
+        <Testimonial content="Trying to be funny but stuck in a room" />
         <div className="md:hidden">
           <Pacman />
         </div>
