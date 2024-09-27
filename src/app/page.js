@@ -10,6 +10,7 @@ import ProjectCollection from "@/components/ProjectCollection";
 import SkillSection from "@/components/SkillSection";
 import { Testimonial } from "@/components/testimonial";
 import { BackgroundLines } from "@/components/ui/background-lines";
+import Weird from "@/components/Weird";
 
 export default function Home() {
   return (
@@ -29,7 +30,9 @@ export default function Home() {
         <div className="md:hidden">
           <Pacman />
         </div>
-        <div className="p-24"></div>
+        <div className="p-24">
+          <Weird />
+        </div>
       </div>
     </BackgroundLines>
   );
